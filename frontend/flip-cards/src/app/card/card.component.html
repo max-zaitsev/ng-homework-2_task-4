@@ -1,0 +1,23 @@
+<div class="flip-box" [ngClass]="{'flipped': flipped}">
+  <div class="flip-box-inner">
+    <div class="item item_front">
+      <div class="item-content">
+        <div class="close" (click)="onDelete();$event.stopPropagation()"></div>
+        <div class="name">{{card.name}}</div>
+      </div>
+    </div>
+
+    <div class="item item_back">
+      <div class="item-content">
+        <div class="close" (click)="onDelete();$event.stopPropagation()"></div>
+        <div class="name">{{card.name}}</div>
+        <div class="description">
+          {{card.description}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

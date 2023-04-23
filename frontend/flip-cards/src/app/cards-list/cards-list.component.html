@@ -1,0 +1,5 @@
+<button (click)="onFlipAll()" class="button" type="button">Перевернуть все</button>
+<div class="cards">
+  <card *ngFor="let card of cards; let i = index" [card]="card" [flipped]="clickedCardMask[i]" (click)="onCardClick(card)" (delete)="onCardDelete($event)"></card>
+</div>
+
